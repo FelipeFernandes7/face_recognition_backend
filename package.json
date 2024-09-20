@@ -6,22 +6,26 @@
     "@types/module-alias": "^2.0.4",
     "@types/morgan": "^1.9.9",
     "@types/node": "^22.5.5",
+    "@types/uuid": "^10.0.0",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.6.2"
   },
   "dependencies": {
+    "@aws-sdk/client-rekognition": "^3.654.0",
+    "aws-sdk": "^2.1691.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
     "jsonwebtoken": "^9.0.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "uuid": "^10.0.0"
   },
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only --clear -r dotenv/config src/main/config/app"
+    "dev": "ts-node-dev --respawn --transpile-only --clear -r dotenv/config src/index"
   },
   "author": "",
   "license": "ISC",
