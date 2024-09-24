@@ -19,13 +19,14 @@
     "express": "^4.21.0",
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
+    "tsconfig-paths": "^4.2.0",
     "uuid": "^10.0.0"
   },
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only --clear -r dotenv/config src/index"
+    "dev": "ts-node-dev --respawn --transpile-only --clear -r tsconfig-paths/register -r dotenv/config src/index"
   },
   "author": "",
   "license": "ISC",
